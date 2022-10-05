@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="hanchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="homePage.HomepageController">
+   <children>
+      <Pane layoutX="22.0" layoutY="24.0" prefHeight="749.0" prefWidth="884.0" style="-fx-background-color: whitesmoke;">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <children>
+            <Separator layoutX="428.0" layoutY="48.0" orientation="VERTICAL" prefHeight="639.0" prefWidth="0.0" />
+            <Label layoutX="242.0" layoutY="37.0" prefHeight="51.0" prefWidth="128.0" text="Quiz" underline="true">
+               <font>
+                  <Font name="Comic Sans MS" size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="209.0" layoutY="82.0" prefHeight="33.0" prefWidth="139.0" text="1. What is Alliteration?">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+            </Label>
+            <JFXRadioButton layoutX="209.0" layoutY="111.0" prefHeight="15.0" prefWidth="148.0" text="Figure of speech" />
+            <JFXRadioButton layoutX="210.0" layoutY="130.0" prefHeight="15.0" prefWidth="148.0" text="Noun" />
+            <JFXRadioButton layoutX="210.0" layoutY="153.0" prefHeight="15.0" prefWidth="148.0" text="Part of speech" />
+            <Label layoutX="455.0" layoutY="82.0" prefHeight="33.0" prefWidth="139.0" text="1. What is IDE?">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+            </Label>
+            <JFXRadioButton layoutX="444.0" layoutY="111.0" prefHeight="15.0" prefWidth="148.0" text="Figure of speech" />
+            <JFXRadioButton layoutX="445.0" layoutY="130.0" prefHeight="15.0" prefWidth="148.0" text="Dev Tool" />
+            <JFXRadioButton layoutX="445.0" layoutY="153.0" prefHeight="15.0" prefWidth="148.0" text="Part of speech" />
+            <JFXButton buttonType="RAISED" layoutX="255.0" layoutY="205.0" prefHeight="43.0" prefWidth="77.0" style="-fx-background-color: maroon;" text="QUIZ" textFill="WHITE">
+               <font>
+                  <Font name="Book Antiqua Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="485.0" layoutY="205.0" onAction="#start" prefHeight="43.0" prefWidth="77.0" style="-fx-background-color: maroon;" text="START" textFill="WHITE">
+               <font>
+                  <Font name="Book Antiqua Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="486.0" layoutY="45.0" prefHeight="35.0" prefWidth="77.0" text="Exams" underline="true">
+               <font>
+                  <Font name="Comic Sans MS" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="952.0" layoutY="14.0" opacity="0.79" prefHeight="773.0" prefWidth="319.0" style="-fx-background-color: #0D47A1;">
+         <children>
+            <ImageView fitHeight="211.0" fitWidth="217.0" layoutX="51.0" layoutY="328.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/2-2-education-picture.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="51.0" layoutY="226.0" prefHeight="51.0" prefWidth="217.0" text="BELLTECH" textFill="#fffafa">
+               <font>
+                  <Font name="Serif" size="38.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

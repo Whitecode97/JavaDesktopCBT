@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="canchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="exams.ChangepassController">
+   <children>
+      <Pane layoutY="-1.0" opacity="0.79" prefHeight="711.0" prefWidth="439.0" style="-fx-background-color: #0d47a1;">
+         <children>
+            <Pane layoutX="91.0" layoutY="186.0" opacity="0.72" prefHeight="186.0" prefWidth="161.0" style="-fx-background-color: whitesmoke;">
+               <effect>
+                  <Glow level="0.17" />
+               </effect>
+            </Pane>
+            <Pane layoutX="198.0" layoutY="372.0" opacity="0.99" prefHeight="169.0" prefWidth="161.0" style="-fx-background-color: whitesmoke;" />
+            <Pane layoutX="278.0" layoutY="541.0" opacity="0.72" prefHeight="169.0" prefWidth="161.0" style="-fx-background-color: whitesmoke;">
+               <effect>
+                  <Glow level="0.36" />
+               </effect>
+            </Pane>
+            <Pane layoutY="-4.0" opacity="0.99" prefHeight="193.0" prefWidth="168.0" style="-fx-background-color: whitesmoke;" />
+         </children>
+      </Pane>
+      <Pane layoutY="710.0" opacity="0.79" prefHeight="90.0" prefWidth="1280.0" style="-fx-background-color: #0D47A1;">
+         <children>
+            <Group layoutX="185.0" layoutY="20.0" />
+            <Label layoutX="597.0" layoutY="35.0" text="(c)Powered by BellTech" textAlignment="CENTER" textFill="#fffbfb">
+               <font>
+                  <Font name="Microsoft YaHei UI Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="550.0" layoutY="142.0" prefHeight="454.0" prefWidth="620.0" style="-fx-background-color: whitesmoke;">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <children>
+            <VBox layoutX="119.0" layoutY="37.0" prefHeight="169.0" prefWidth="383.0" spacing="30.0">
+               <children>
+                  <JFXTextField fx:id="adminName" labelFloat="true" promptText="Old Username" />
+                  <JFXTextField fx:id="admin" labelFloat="true" layoutX="10.0" layoutY="10.0" onKeyPressed="#validation" promptText="New Username" />
+                  <JFXTextField fx:id="oldpass" labelFloat="true" layoutX="10.0" layoutY="71.0" promptText="Old Password" />
+                  <JFXTextField fx:id="newpassw" labelFloat="true" layoutX="10.0" layoutY="132.0" onKeyPressed="#validation" promptText="New Password" />
+                  <JFXTextField fx:id="confmpass" labelFloat="true" layoutX="10.0" layoutY="193.0" onKeyPressed="#validation" promptText="Confirm Password" />
+               </children>
+            </VBox>
+            <HBox layoutX="252.0" layoutY="373.0" prefHeight="44.0" prefWidth="187.0" spacing="30.0">
+               <children>
+                  <JFXButton fx:id="done" buttonType="RAISED" onAction="#changePass" prefHeight="34.0" prefWidth="81.0" style="-fx-border-color: maroon; -fx-background-color: white;" text="Done" textFill="MAROON">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="cancel" buttonType="RAISED" layoutX="10.0" layoutY="10.0" onAction="#fieldcancel" prefHeight="34.0" prefWidth="81.0" style="-fx-border-color: maroon; -fx-background-color: white;" text="Cancel" textFill="MAROON">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+      <Label layoutX="741.0" layoutY="55.0" prefHeight="34.0" prefWidth="205.0" text="Change Password" underline="true">
+         <font>
+            <Font name="Book Antiqua" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="backarrow" fitHeight="31.0" fitWidth="31.0" layoutX="1214.0" layoutY="24.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8_Back_32px_1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
